@@ -1,0 +1,115 @@
+/* Universalnij container */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+
+}
+
+/* VARIABLES-peremennije */
+:root{
+    --pretty-color:#ff6c00;
+    --white-color:#FFFFFF;
+    --main-font:'Open+Sans' ,sans-serif;
+    --accent-font:'Raleway', sans-serif ;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: normal;
+}
+
+
+/* HEADER style */
+.header{
+    background-color: black;
+    color: var(--white-color)
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.media-list a:hover,
+.media-list a:focus
+{
+color: var(--pretty-color);
+}
+/* HEADER style */
+
+.online-sign{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    padding:12px 20px;
+
+    border: 1px solid var(--pretty-color);
+    border-radius: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/* Selector tega */
+ul{
+/* убрали маркеры списка */
+    list-style: none;
+}
+
+a {
+    /* наследует цвет шрифтра от родителя */
+    color: inherit;
+    /* убрали нижнее подчеркивание */
+    text-decoration: none;
+}
+
+/* Selector classa */
+.container {
+width: 1200px;
+margin: 0 auto;
+ }
+
+/* Selektor naslednika (vse vlozenosti) */
+.navList li {
+    border: 3px solid blue;
+}
+
+/* Selektor rebenka (tolko pervaja vlozenost) */
+.navList > li{
+    border: 2px solid black;
+}
+
+/*
+inline(style)    id   class tag
+1000             100  10    1
+ */ */

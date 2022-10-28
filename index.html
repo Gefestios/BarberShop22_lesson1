@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
     <!-- Шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
         <!--Логотип-->
-        <img src="./images/logo.svg" alt="logo">
+        <img src="./images/icons/logo.svg" alt="logo">
         <!--Навигация-->
         <nav>
         <!--Меню-->
-            <ul>
-                <li>
-                    <a href="">О нас</a>
+            <ul class="nav-list">
+                <li class="item">
+                    <a href="#about">О нас</a>
                 </li>
-                <li>
-                    <a href="">Услуги и цены</a>
+                <li class="item">
+                    <a href="#price">Услуги и цены</a>
                 </li>
-                <li>
-                    <a href="">Мастера</a>
+                <li class="item">
+                    <a href="#masters">Мастера</a>
                 </li>
-                <li>
-                    <a href="">Контакты</a>
+                <li class="item">
+                    <a href="#contact">Контакты</a>
                 </li>
             </ul>
         <!--Контакты-->
-            <ul>
+            <ul class="media-list">
                 <li>
                     <a href="tel:+380672685642">+380672685642</a>
                 </li>
                 <li>
-                    <a href="">онлайн-запись</a>
+                    <a href="#" class="online-sign">онлайн-запись</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +45,7 @@
     </header>
     <!--Main content-->
     <main>
-        <section>
+        <section id="about">
             <div class="container">
             <!--Соцсети-->
             <ul>
@@ -58,7 +56,7 @@
             <div>
             <p>A hair salon for men in Kyiv</p>
             <h1>BarberShop</h1>
-            <p>Мы эксперты в модных мужских стрижках.
+            <p>Мы эксперты в модных мужских стрижках.<br>
             Работаем быстро, осторожно и со вкусом.</p>
             </div>
             <!--Кнопки Назад Вперед-->
@@ -92,11 +90,11 @@
                             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
                             всегда
                             готовы усовершенствовать каждого, кто к нам приходит!</p>
-                        <a href="#">онлайн-запись</a>
+                        <a href="#" class="online-sign">онлайн-запись</a>
                     </div>
             </div>
         </section>
-        <section>
+        <section id="price">
             <div class="container">
             <p>Проведи время в компании лучших мастеров</p>
             <h2>Услуги и цены</h2>
@@ -136,12 +134,32 @@
                     <td>от 200 грн.</td>
                 </tr>
             </table>
-            <a href="#">онлайн-запись</a>
+            <a href="#" class="online-sign">онлайн-запись</a>
             </div>
         </section>
         <section>
             <div class="container">
-            <ul>
+                <ul>
+                    <li>
+                        <p>600<sup>+</sup></p>
+                        
+                        <p>Довольных клиентов в день</p>
+                    </li>
+                    <li>
+                        <p>50<sup>+</sup></p>
+                        
+                        <p>Наград за отличный сервис</p>
+                    </li>
+                    <li>
+                        <p>20<sup>+</sup></p>
+                        <p>Лучших мастеров Киева</p>
+                    </li>
+                    <li>
+                        <p>100<sup>+</sup></p>
+                        <p>Подарков постоянным клиентам</p>
+                    </li>
+                </ul>
+            <!-- <ul>
                 <li>600</li>
                 <li>Довольных клиентов в день</li>
             </ul>
@@ -156,7 +174,7 @@
             <ul>
                 <li>100</li>
                 <li>Подарков постоянным клиентам</li>
-            </ul>
+            </ul> -->
             <div>
                 <p>старая традиционная школа</p>
                 <h2>Почему приходят именно к нам?</h2>
@@ -164,7 +182,7 @@
             </div>
             </div>
         </section>
-        <section>
+        <section id="masters">
             <div class="container">
             <p>для настоящих ценителей атмосферы</p>
             <h2>Наши мастера</h2>
@@ -229,7 +247,7 @@
                 </form>
             </div>
             <!-- Contact -->
-        <div>
+        <div id="contact">
             <h2>Контакты</h2>
             <address>
                 <ul>
@@ -253,7 +271,7 @@
         </section>
     </main>
     <footer>
-        <div class="comtainer">
+        <div class="container">
         <p>&copy; Copyright 2020</p>
             <ul>
                 <li> <a href="">Youtube</a> </li>
